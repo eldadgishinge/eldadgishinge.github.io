@@ -1,0 +1,721 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #faf0e6;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Header styles */
+
+header {
+  background: linear-gradient(to right, #352f44, #5c5470);
+  color: #fff2d8;
+  padding: 20px 0;
+  text-align: center;
+}
+nav{
+  background: linear-gradient(to right, #352f44, #5c5470);
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center-align navigation links */
+}
+
+nav li {
+  margin-right: 200px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff2d8;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #f9b572; /* Change color on hover */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack links on smaller screens */
+  }
+
+  nav li {
+    margin: 10px 0; /* Adjust spacing for stacked links */
+  }
+}
+@media screen and (max-width: 1180px) {
+  nav ul {
+    flex-direction: column; /* Stack links on smaller screens */
+  }
+
+  nav li {
+    margin: 10px 0; /* Adjust spacing for stacked links */
+   text-align: justify;
+  }
+}
+/* Section styles */
+section {
+  background-color: #b9b4c7;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #faf0e6;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #f5ebe0;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #f0dbdb;
+}
+
+/* Text styles */
+p {
+  margin: 10px 0;
+}
+
+/* Link styles */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* List styles */
+ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+/* Project link styles */
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #f5ebe0;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Contact section styles */
+#contact {
+  text-align: center;
+}
+
+#contact a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #f0dbdb;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Additional styles for the profile picture and about section */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b9b4c7;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.about-text {
+  flex: 1;
+  color: #faf0e6;
+}
+
+h1,
+h2,
+p {
+  color: #faf0e6;
+}
+
+/* Add this to your existing CSS */
+#read-more-button {
+  background-color: #ead7bb;
+  color: #fff2d8;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+#read-more-button:hover {
+  background-color: #f9b572;
+}
+
+/* Add this CSS to your styles.css or in a <style> tag in your HTML */
+
+.experience-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.job {
+  flex: 1;
+  width: 48%;
+  padding: 20px;
+  background-color: #faf0e6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+.job:hover {
+  background-color: #f9b572;
+}
+
+/* Background Video Styles */
+#education {
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+#education:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Education Images Styles */
+.education-images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.education-images img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.education-images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Education Text Styles */
+#education {
+  text-align: center;
+  padding: 20px;
+}
+
+#education h2 {
+  font-size: 2rem;
+  color: #352f44;
+  margin-bottom: 10px;
+}
+
+#education p {
+  font-size: 1.2rem;
+  color: #5c5470;
+  margin: 10px 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  #education p,
+  #education h2 {
+    font-size: 1.5rem;
+  }
+  .education-images img {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #education p,
+  #education h2 {
+    font-size: 1.2rem;
+  }
+  .education-images img {
+    max-width: 60%;
+  }
+}
+
+.education-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.image-container {
+  flex-basis: calc(50% - 10px); /* Two images per row with some spacing */
+  margin-bottom: 10px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Change the text color within the "education" section to white */
+/* Add a background color to the "education" section */
+/* Add a background color to the "education" section */
+#education {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  background-color: #b9b4c7; /* Add a semi-transparent black background */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Apply background color to the heading and paragraphs within the "education" section */
+#education h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+  padding: 10px; /* Add padding to create a background behind the text */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#education p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 10px 0;
+  padding: 10px; /* Add padding to create a background behind the text */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Add a hover effect to change the background color and text color */
+#education:hover {
+  background-color: #f9b572; /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
+}
+
+#education h2:hover,
+#education p:hover {
+  background-color: #f9b572; /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
+}
+
+/* Positioning for the top-right corner */
+.project {
+  position: relative;
+  margin: 20px;
+}
+
+.project-corner.top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #f9b572;
+  transform: translate(50%, -50%);
+  z-index: 1;
+}
+
+/* Positioning for the bottom-left corner */
+.project-corner.bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #f9b572;
+  transform: translate(-50%, 50%);
+  z-index: 1;
+}
+
+/* Styling for the project details */
+.project-details {
+  background-color: #faf0e6;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+}
+/* Section styles */
+#projects {
+  background-color: #b9b4c7;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+
+  /* Additional styles for hover */
+  cursor: pointer;
+}
+
+#projects:hover {
+  background-color: #333; /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
+}
+
+/* Change text color for project titles and descriptions */
+#projects .project h3,
+#projects .project p {
+  color: #352f44; /* Set the text color to your desired color */
+}
+/* Style the GitHub repo links as buttons */
+.github-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Choose a button background color */
+  color: #fff; /* Text color on the button */
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.github-button:hover {
+  background-color: #f9b572; /* Button background color on hover */
+}
+
+/* Style the Skills section */
+#skills {
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#skills h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+#skills li {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#skills li:hover {
+  color: #007bff; /* Change text color on hover */
+}
+/* Set a flex layout for the whole page */
+
+/* Adjust the width and margins of sections for the new layout */
+section {
+  width: 100%;
+  margin: 20px;
+}
+
+/* Specify the width and positioning of the "Skills" section */
+#skills {
+  width: 100%; /* Adjust this value based on your preference */
+  margin-left: auto;
+}
+
+/* Responsive styles to stack sections on smaller screens */
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+}
+/* Adjust the width and positioning of the duplicated "Skills" section */
+#skills-left {
+  width: 30%; /* Adjust the width as needed */
+  margin-right: auto; /* Position on the left side */
+}
+
+/* Ensure the duplicated section does not overlap with the original "Skills" section */
+#skills-left + #skills {
+  margin-left: 0;
+  margin-right: 20px; /* Add spacing between the sections */
+}
+
+#skills-right {
+  width: 30%; /* Adjust the width as needed */
+  margin-left: auto; /* Position on the left side */
+}
+
+/* Ensure the duplicated section does not overlap with the original "Skills" section */
+#skills-right + #skills {
+  margin-right: 0;
+  margin-left: 20px; /* Add spacing between the sections */
+}
+/* Styles for the skills container */
+#skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Styles for both skills sections (left and right) */
+#skills-left,
+#skills-right {
+  flex: 1;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+#skills-left h2,
+#skills-right h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#skills-left ul,
+#skills-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+#skills-left li,
+#skills-right li {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* Add hover effect for the skills sections */
+#skills-left:hover,
+#skills-right:hover {
+  background-color: #f9b572;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Add hover effect for the skill items */
+#skills-left li:hover,
+#skills-right li:hover {
+  color: #007bff;
+}
+/* Awards section styles */
+#awards {
+  text-align: center;
+  padding: 20px;
+  background-color: #555;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.awards-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.award {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  transition: background-color 0.3s;
+  text-align: center;
+  cursor: pointer;
+  transform: scale(1); /* Add initial scale value */
+  transition: transform 0.3s; /* Add transform transition */
+}
+
+.award img {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.award-info {
+  text-align: center;
+}
+
+.award h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.award p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Add hover effect for the awards section */
+#awards:hover {
+  background-color: #f9b572; /* Change the background color on hover */
+}
+
+/* Add hover effect to increase the size of awards when hovered */
+.award:hover {
+  background-color: #f9b572; /* Change the background color on hover */
+  transform: scale(1.05); /* Increase the size on hover */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .awards-list {
+    flex-direction: column;
+  }
+}
+
+
+/* Languages section styles */
+#languages {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.language-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.language-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  transition: background-color 0.3s;
+  text-align: center;
+  cursor: pointer;
+}
+
+.language-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.language-item p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Add hover effect for the language section */
+#languages:hover {
+  background-color: #f9b572; /* Change the background color on hover */
+}
+
+/* Add hover effect for language items */
+.language-item:hover {
+  background-color: #f9b572; /* Change the background color on hover */
+}
+#contact {
+  text-align: center;
+  padding: 20px;
+  background-color: #555;
+}
+
+.contact-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-item img {
+  max-width: 32px;
+  max-height: 32px;
+  margin-right: 10px;
+}
+
+.contact-item a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+/* Add hover effect for the contact items */
+.contact-item:hover {
+  background-color: #f9b572; /* Change the background color on hover */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .contact-item {
+    flex-direction: column;
+  }
+}
+
+
+
+
